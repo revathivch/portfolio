@@ -20,7 +20,7 @@ const Projects = ({openModal,setOpenModal}) => {
             :
             <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
           }
-          <Divider />
+          {/* <Divider />
           {toggle === 'web app' ?
             <ToggleButton active value="web app" onClick={() => setToggle('web app')}>WEB APP</ToggleButton>
             :
@@ -28,9 +28,16 @@ const Projects = ({openModal,setOpenModal}) => {
           }
           <Divider />
           {toggle === 'mobile app' ?
-            <ToggleButton active value="mobile app" onClick={() => setToggle('mobile app')}>ANDROID APP</ToggleButton>
+            <ToggleButton active value="mobile app" onClick={() => setToggle('mobile app')}>MOBILE APP</ToggleButton>
             :
             <ToggleButton value="mobile app" onClick={() => setToggle('mobile app')}>MOBILE APP</ToggleButton>
+          } */}
+
+          <Divider />
+          {toggle === 'app dev' ?
+            <ToggleButton active value="app dev" onClick={() => setToggle('app dev')}>APPLICATION DEV</ToggleButton>
+            :
+            <ToggleButton value="app dev" onClick={() => setToggle('app dev')}>APPLICATION DEV</ToggleButton>
           }
           <Divider />
           {toggle === 'machine learning' ?
@@ -45,7 +52,7 @@ const Projects = ({openModal,setOpenModal}) => {
               <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
             ))}
           {projects
-            .filter((item) => item.category == toggle)
+            .filter((item) => item.category === toggle)
             .map((project) => (
               <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
             ))}

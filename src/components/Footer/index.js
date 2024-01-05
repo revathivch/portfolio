@@ -88,7 +88,7 @@ function Footer() {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Logo>Rishav Chanda</Logo>
+        <Logo>Revathi Vipinachandran</Logo>
         <Nav>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
@@ -102,9 +102,6 @@ function Footer() {
           <SocialMediaIcon href={Biodata.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
           <SocialMediaIcon href={Biodata.insta} target="display"><InstagramIcon /></SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>
-          &copy; 2023 Rishav Chanda. All rights reserved.
-        </Copyright>
 
       </FooterWrapper>
     </FooterContainer>

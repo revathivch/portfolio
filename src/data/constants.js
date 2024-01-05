@@ -190,22 +190,22 @@ export const work_experience = [
 export const projects = [
     {
         id: 0,
-        project_name: "Kaleidoscope Collaborative",
+        title: "Kaleidoscope Collaborative",
         date: "September 2023 - December 2023",
-        image: "",
+        image: "/images/kaleidoscope_collaborative",
         description: "Developed cross-platform login, registration, and dashboard interfaces in Flutter, using Figma for design reference and Provider package for state management, ensuring UI consistency with Material UI and Cupertino components. Constructed a secure backend infrastructure utilizing Firebase, established Firestore for database management and Firebase Auth for authentication, with preemptive database schema design in Figma for streamlined data operations.",
         skills: [],
-        category: "mobile app",
+        category: "app dev",
         github: "https://github.com/BU-Spark/se-kaleidoscope-collaborative",
     },
     {
         id: 1,
-        project_name: "Java Bank Application",
+        title: "Java Bank Application",
         date: "September 2022 - December 2022",
         image: "",
         description: "",
         skills: [],
-        category: "java app",
+        category: "app dev",
         github: "https://github.com/revathivch/BankApplication",
         member: [
             {
@@ -220,7 +220,7 @@ export const projects = [
     },
     {
         id: 2,
-        project_name: "Small Object Detection for Spotting Birds",
+        title: "Small Object Detection for Spotting Birds",
         date: "January 2023 - May 2023",
         image: "",
         description: "",
@@ -239,7 +239,7 @@ export const projects = [
           ],
     },
     {
-        project_name: "Foreign Exchange Rate Prediction",
+        title: "Foreign Exchange Rate Prediction",
         date: "January 2019 - May 2019",
         image: "",
         description: "",
@@ -281,10 +281,10 @@ export const education = [
   ];
   
 
-export const TimeLineData = [
-    { year: 2017, text: "Started my journey" },
-    { year: 2018, text: "Worked as a freelance developer" },
-    { year: 2019, text: "Founded JavaScript Mastery" },
-    { year: 2020, text: "Shared my projects with the world" },
-    { year: 2021, text: "Started my own platform" },
-  ];
+// export const TimeLineData = [
+//     { year: 2017, text: "Started my journey" },
+//     { year: 2018, text: "Worked as a freelance developer" },
+//     { year: 2019, text: "Founded JavaScript Mastery" },
+//     { year: 2020, text: "Shared my projects with the world" },
+//     { year: 2021, text: "Started my own platform" },
+//   ];

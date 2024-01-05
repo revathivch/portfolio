@@ -26,6 +26,17 @@ const Wrapper = styled.div`
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);
 `
+
+
+// const Wrapper = styled.div`
+//   background: linear-gradient(135deg, #1E1E1E, #2A2A2A, #413B50, #2A2A2A, #1E1E1E); // Darker grey with a touch of deep purple
+//   width: 100%;
+//   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
+// `
+
+
+
+
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [openModal, setOpenModal] = useState({ state: false, project: null });
@@ -35,7 +46,7 @@ function App() {
       <Router >
         <Navbar />
         <Body>
-          <HeroSection />
+        <HeroSection />
           <Wrapper>
             <Skills />
             <Experience />

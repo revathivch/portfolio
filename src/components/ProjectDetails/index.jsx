@@ -201,16 +201,16 @@ const index = ({ openModal, setOpenModal }) => {
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
                     <Tags>
-                        {project?.tags.map((tag) => (
+                        {project?.tags && project.tags.map((tag) => (
                             <Tag>{tag}</Tag>
                         ))}
                     </Tags>
                     <Desc>{project?.description}</Desc>
-                    {project.member && (
+                    {project?.member && (
                         <>
                             <Label>Members</Label>
                             <Members>
-                                {project?.member.map((member) => (
+                                {project?.member && project.member.map((member) => (
                                     <Member>
                                         <MemberImage src={member.img} />
                                         <MemberName>{member.name}</MemberName>
