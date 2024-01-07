@@ -3,6 +3,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import EmailIcon from '@mui/icons-material/Email';
 import { Biodata } from '../../data/constants';
 
 const FooterContainer = styled.div`
@@ -89,6 +90,11 @@ function Footer() {
     <FooterContainer>
       <FooterWrapper>
         <Logo>Revathi Vipinachandran</Logo>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <EmailIcon />
+          <p style={{ color: '#808080', marginLeft: '10px' }}>revathiv@bu.edu</p>
+        </div>
+
         <Nav>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#education">Education</NavLink>
@@ -102,7 +108,6 @@ function Footer() {
           {/* <SocialMediaIcon href={Biodata.linkedin_link} target="display"><LinkedInIcon /></SocialMediaIcon>
           <SocialMediaIcon href={Biodata.instagram_link} target="display"><InstagramIcon /></SocialMediaIcon>
         </SocialMediaIcons> */}
-
       </FooterWrapper>
     </FooterContainer>
   );

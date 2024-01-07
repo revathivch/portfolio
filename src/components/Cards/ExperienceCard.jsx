@@ -25,13 +25,15 @@ const Description = styled.div`
 `
 
 const Span = styled.span`
-overflow: hidden;
-display: -webkit-box;
-max-width: 100%;
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
-text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: pre-line; 
 `
+
 
 const Card = styled.div`
     width: 650px;
@@ -142,7 +144,14 @@ const Skill = styled.div`
     }
 `
 
-
+const Div = styled.div`
+    overflow: hidden;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+`
 
 const ExperienceCard = ({ experience }) => {
     return (

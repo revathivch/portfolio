@@ -181,7 +181,7 @@ export const work_experience = [
         role: "Software Engineer",
         company: "Honeywell Inc.",
         date: "August 2021 - August 2022",
-        desc: "● Built an Azure Blob Storage logging tool with Python for error detection, merged it with ServiceNow via RESTful API for incident management, and deployed via an OpenShift CI/CD pipeline, achieving 65% reduction in system downtime.\n● Engineered Python scripts for automated analysis of Neo4j database metrics, leveraging Elasticsearch for data retrieval and Influx DB for storage, resulting in enhanced API usage and cost management insights.\n● Crafted a Python-based tool for Grafana dashboard migration, utilizing GitPython for version control, facilitating efficient transitions between operational environments, and delivering a monthly time-saving of 50 hours.",
+        desc: "● Built an Azure Blob Storage logging tool with Python for error detection, merged it with ServiceNow via RESTful API for incident management, and deployed via an OpenShift CI/CD pipeline, achieving 65% reduction in system downtime.\n ● Engineered Python scripts for automated analysis of Neo4j database metrics, leveraging Elasticsearch for data retrieval and Influx DB for storage, resulting in enhanced API usage and cost management insights.\n● Crafted a Python-based tool for Grafana dashboard migration, utilizing GitPython for version control, facilitating efficient transitions between operational environments, and delivering a monthly time-saving of 50 hours.",
         skills: ["Python","Microsoft Azure", "Git","Openshift", "Grafana", "Docker", "Kubernetes", "API Development", "ElasticSearch", "InfluxDB", "ServiceNow", "Terraform"],
     },
     {
@@ -306,7 +306,7 @@ export const projects = [
         description: "Developed 30+ visualizations employing a racial equity and economic mobility lens to assess and address the multifaceted disparities prevalent in the Southwest DC neighborhood.",
         skills: [],
         category: "machine learning",
-        github: "",
+        github: "https://github.com/BU-Spark/ds-dc-councilor-allen-southwest",
     
     },
     {
