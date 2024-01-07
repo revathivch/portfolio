@@ -35,8 +35,6 @@ const Wrapper = styled.div`
 // `
 
 
-
-
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [openModal, setOpenModal] = useState({ state: false, project: null });
@@ -46,16 +44,17 @@ function App() {
       <Router >
         <Navbar />
         <Body>
-        <HeroSection />
+          <HeroSection />
+          <Education />
           <Wrapper>
             <Skills />
             <Experience />
           </Wrapper>
           <Projects openModal={openModal} setOpenModal={setOpenModal} />
-          <Wrapper>
+          {/* <Wrapper>
             <Education />
             <Contact />
-          </Wrapper>
+          </Wrapper> */}
           <Footer />
           {openModal.state &&
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />

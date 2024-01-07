@@ -226,8 +226,17 @@ const index = ({ openModal, setOpenModal }) => {
                         </>
                     )}
                     <ButtonGroup>
-                        <Button dull href={project?.github} target='new'>View Code</Button>
-                        <Button href={project?.webapp} target='new'>View Live App</Button>
+                        {
+                            Array.isArray(project?.multicode) && project.multicode.length > 0 ?
+                                project.multicode.map((game, index) => (
+                                    <Button key={index} dull href={game.github_link} target='new'>View Code for {game.name}</Button>
+                                ))
+                            :
+                                <>
+                                    <Button dull href={project?.github} target='new'>View Code</Button>
+                                    {project?.webapp && <Button href={project?.webapp} target='new'>View Live App</Button>}
+                                </>
+                        }
                     </ButtonGroup>
                 </Wrapper>
             </Container>

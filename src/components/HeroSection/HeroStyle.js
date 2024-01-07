@@ -166,38 +166,76 @@ export const SubTitle = styled.div`
   }
 `;
 
-export const ResumeButton = styled.a`
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    width: 95%;
-    max-width: 300px;
-    text-align: center;
-    padding: 16px 0;
-    color:${({ theme }) => theme.white};
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    box-shadow:  20px 20px 60px #1F2634,
-    -20px -20px 60px #1F2634;
-    &:hover {
-        transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
-    filter: brightness(1);
-    }    
-    
-    
-    @media (max-width: 640px) {
-        padding: 12px 0;
-        font-size: 18px;
-    } 
+export const ButtonBase = styled.a`
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  width: 95%;
+  max-width: 300px;
+  text-align: center;
+  margin-top: 15px;
+  padding: 16px 0;
+  color:${({ theme }) => theme.white};
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out !important;
 
+  &:hover {
+      transform: scale(1.05);
+  transition: all 0.4s ease-in-out;
+  box-shadow:  20px 20px 60px #1F2634,
+  filter: brightness(1);
+  }    
 `;
+
+export const ResumeButton = styled(ButtonBase)`
+  background: hsla(271, 100%, 50%, 1);
+  background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  box-shadow:  20px 20px 60px #1F2634,
+`;
+
+export const LinkedInButton = styled(ButtonBase)`
+  background-color: ${({ theme }) => theme.primary};
+  ${({ dull, theme }) => dull && `
+      background-color: ${theme.bgLight};
+      color: ${theme.text_secondary};
+      &:hover {
+          background-color: ${({ theme }) => theme.bg + 99};
+      }
+  `}
+`;
+
+export const ProfileContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 35vw; 
+`;
+
+
+
+export const SocialMediaIcons = styled.div`
+  display: flex;
+  font-size: 2.5rem; 
+`;
+
+export const SocialMediaIcon = styled.a`
+  display: inline-block;
+  margin: 0 1rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: ${({ theme }) => theme.text_primary};
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+`;
+
+
+

@@ -158,9 +158,8 @@ const ExperienceCard = ({ experience }) => {
             <Description>
                 {experience?.desc &&
                     <Span>{experience?.desc}</Span>
-
                 }
-                {experience?.skills &&
+                {/* {experience?.skills &&
                     <>
                         <br />
                         <Skills>
@@ -172,7 +171,7 @@ const ExperienceCard = ({ experience }) => {
                             </ItemWrapper>
                         </Skills>
                     </>
-                }
+                } */}
             </Description>
             {experience.doc &&
                 <a href={experience.doc} target="new">

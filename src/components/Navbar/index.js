@@ -30,7 +30,7 @@ const Navbar = () => {
           <NavLink href='#education'>Education</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GitHubButton href={Biodata.github} target="_blank">Github Profile</GitHubButton>
+          <GitHubButton href={Biodata.github_link} target="_blank">Github Profile</GitHubButton>
         </ButtonContainer>
         {
           isOpen &&
@@ -38,6 +38,9 @@ const Navbar = () => {
             <MobileLink href="#about" onClick={() => {
               setIsOpen(!isOpen)
             }}>About</MobileLink>
+            <MobileLink href='#education' onClick={() => {
+              setIsOpen(!isOpen)
+            }}>Education</MobileLink>
             <MobileLink href='#skills' onClick={() => {
               setIsOpen(!isOpen)
             }}>Skills</MobileLink>
@@ -47,10 +50,7 @@ const Navbar = () => {
             <MobileLink href='#projects' onClick={() => {
               setIsOpen(!isOpen)
             }}>Projects</MobileLink>
-            <MobileLink href='#education' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Education</MobileLink>
-            <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Biodata.github} target="_blank">Github Profile</GitHubButton>
+            <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Biodata.github_link} target="_blank">Github Profile</GitHubButton>
           </MobileMenu>
         }
       </NavbarContainer>

@@ -91,17 +91,17 @@ function Footer() {
         <Logo>Revathi Vipinachandran</Logo>
         <Nav>
           <NavLink href="#about">About</NavLink>
+          <NavLink href="#education">Education</NavLink>
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
         </Nav>
-        <SocialMediaIcons>
-          <SocialMediaIcon href={Biodata.facebook} target="display"><FacebookIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Biodata.twitter} target="display"><TwitterIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Biodata.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Biodata.insta} target="display"><InstagramIcon /></SocialMediaIcon>
-        </SocialMediaIcons>
+        {/* <SocialMediaIcons> */}
+          {/* <SocialMediaIcon href={Biodata.facebook} target="display"><FacebookIcon /></SocialMediaIcon> */}
+          {/* <SocialMediaIcon href={Biodata.twitter} target="display"><TwitterIcon /></SocialMediaIcon> */}
+          {/* <SocialMediaIcon href={Biodata.linkedin_link} target="display"><LinkedInIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Biodata.instagram_link} target="display"><InstagramIcon /></SocialMediaIcon>
+        </SocialMediaIcons> */}
 
       </FooterWrapper>
     </FooterContainer>
